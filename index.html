@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimal-ui, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Q7</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+  <body>
+
+    <div class="container">
+      <div class="canvasHolder" id="canvasHolder">
+        <div class="overlay"></div>
+        <footer>
+          <ul>
+            <li><i class="fa fa-arrow-circle-o-left">left</i></li>
+            <li class="wide">
+              <i class="fa fa-bar-chart">chart</i>
+              <i class="fa fa-cog">settings</i>
+            </li>
+            <li><i class="fa fa-arrow-circle-o-right">right</i></li>
+          </ul>
+        </footer>
+        <section class="barchart_container">
+          <div class="barchart">
+            <h2>Statistics</h2>
+            <br>
+            <article>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris lacus, porta eget enim posuere, cursus finibus tortor. Donec quis molestie diam. Maecenas in justo condimentum, tincidunt massa id, faucibus enim.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris lacus, porta eget enim posuere, cursus finibus tortor. Donec quis molestie diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris lacus, porta eget enim posuere, cursus finibus tortor. Donec quis molestie diam. Maecenas in justo condimentum, tincidunt massa id.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris lacus, porta eget enim posuere, cursus finibus tortor. Donec quis molestie diam.</p>
+            </article>
+            <div id="chart">
+              <ul id="numbers">
+                <li><span>100%</span></li>
+                <li><span>90%</span></li>
+                <li><span>80%</span></li>
+                <li><span>70%</span></li>
+                <li><span>60%</span></li>
+                <li><span>50%</span></li>
+                <li><span>40%</span></li>
+                <li><span>30%</span></li>
+                <li><span>20%</span></li>
+                <li><span>10%</span></li>
+                <li><span>0%</span></li>
+              </ul>
+
+              <ul id="bars">
+                <li><div data-percentage="56" class="bar"></div><span>Sunday</span></li>
+                <li><div data-percentage="33" class="bar"></div><span>Monday</span></li>
+                <li><div data-percentage="54" class="bar"></div><span>Tuesday</span></li>
+                <li><div data-percentage="94" class="bar"></div><span>Wednesday</span></li>
+                <li><div data-percentage="44" class="bar"></div><span>Thursday</span></li>
+                <li><div data-percentage="23" class="bar"></div><span>Friday</span></li>
+                <li><div data-percentage="0" class="bar"></div><span><b>Saturday</b></span></li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <canvas id="myCanvas"></canvas>
+      </div>
+    </div>
+
+    <header class="type">Loading</header>
+
+    <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/easeljs-0.8.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        init();
+      });
+    </script>
+
+  </body>
+</html>
